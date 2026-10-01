@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What's Really in Fast Food?</title>
+<style>
+:root{
+  --ink:#18212b; --muted:#5d6875; --cream:#f7f3eb; --paper:#ffffff;
+  --green:#1f6f5b; --green2:#2e8b70; --orange:#e47b39; --gold:#f2bd4b;
+  --line:#dfe4e7; --shadow:0 14px 35px rgba(24,33,43,.10);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:12px}
+nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;padding:8px 12px;border-radius:20px}
+nav a:hover{background:#eaf4ef;color:var(--green)}
+.hero{background:linear-gradient(135deg,#173f35,#28775f);color:white;padding:90px 7vw 80px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-120px;top:-130px;background:rgba(242,189,75,.18)}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:20px;font-size:13px;font-weight:bold;letter-spacing:.5px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.0;margin:20px 0 18px;max-width:900px}
+.hero p{font-size:20px;max-width:780px;color:#e8f2ee}
+.container{max-width:1100px;margin:auto;padding:65px 22px}
+.section-title{font-size:38px;line-height:1.15;margin:0 0 12px}
+.lead{color:var(--muted);font-size:18px;max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:28px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow)}
+.card h3{margin-top:0;font-size:23px}
+.number{font-size:14px;font-weight:800;color:var(--orange);letter-spacing:1px;text-transform:uppercase}
+.stat{font-size:42px;font-weight:800;color:var(--green);margin:5px 0}
+.callout{margin:30px 0;padding:26px 30px;border-left:6px solid var(--gold);background:#fff9e9;border-radius:12px}
+.dark{background:#1b2927;color:white}
+.dark .lead{color:#d6e2df}
+.dark .card{background:#243632;border-color:#36504a;color:white}
+.pill{display:inline-block;padding:5px 10px;background:#e8f4ef;color:var(--green);border-radius:14px;font-size:12px;font-weight:bold;margin:3px}
+table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+th,td{text-align:left;padding:15px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#edf5f1;color:var(--green)}
+.meal{border-top:5px solid var(--green)}
+.meal h3{font-size:25px}
+.small{font-size:14px;color:var(--muted)}
+.source{margin:12px 0}
+.source a{color:var(--green);font-weight:700}
+footer{background:#111a18;color:#d7e1de;padding:45px 7vw}
+footer a{color:#bfe5d7}
+@media(max-width:700px){.container{padding:45px 18px}.hero{padding:70px 22px}.section-title{font-size:31px}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#why">Why It Matters</a>
+<a href="#foods">Popular Foods</a>
+<a href="#ingredients">Hidden Ingredients</a>
+<a href="#effects">Health Effects</a>
+<a href="#alternatives">Better Alternatives</a>
+<a href="#takeaways">Takeaways</a>
+<a href="#sources">Sources</a>
+</nav>
+
+<header class="hero" id="home">
+<span class="tag">10TH GRADE RESEARCH PROJECT</span>
+<h1>What's Really in Fast Food?</h1>
+<p>A closer look at popular fast-food meals, unfamiliar ingredients, nutrition, possible health effects, and simple alternatives.</p>
+</header>
+
+<section class="container" id="why">
+<h2 class="section-title">Why This Matters</h2>
+<p class="lead">Fast food is convenient, affordable, and popular. The important question is not whether one meal is automatically “good” or “bad,” but whether we understand what we are eating and how it fits into our overall diet.</p>
+<div class="grid">
+<div class="card"><div class="number">Current data</div><div class="stat">30.1%</div><p>of U.S. children and adolescents ages 2–19 consumed fast food on a given day during August 2021–August 2023.</p></div>
+<div class="card"><div class="number">Teenagers</div><div class="stat">14.6%</div><p>of adolescents ages 12–19 got this percentage of their daily calories from fast food on average during the same period.</p></div>
+<div class="card"><div class="number">The bigger picture</div><p>CDC research connects fast-food consumption with higher calorie intake and poorer diet quality among children and adolescents.</p></div>
+</div>
+<div class="callout"><strong>Why understand what you're digesting?</strong><br>
+Food supplies energy and nutrients that your body uses for growth, movement, concentration, and everyday functions. Reading ingredient lists and nutrition facts helps you recognize sodium, added sugars, fats, preservatives, and other ingredients instead of relying only on advertising or appearance.</div>
+</section>
+
+<section class="container dark" id="foods">
+<h2 class="section-title">Popular Fast Foods: What Is Actually In Them?</h2>
+<p class="lead">The examples below use current ingredient and nutrition information published by the restaurants. Recipes can vary by location or customization.</p>
+<div class="grid">
+<div class="card">
+<div class="number">01 • McDonald's</div>
+<h3>Big Mac</h3>
+<p><strong>580 calories</strong> for the sandwich alone.</p>
+<p>It includes two beef patties, a sesame bun, Big Mac sauce, American cheese, pickles, lettuce, and onion. McDonald's also notes that its pickles contain an artificial preservative.</p>
+<p><span class="pill">Beef</span><span class="pill">Cheese</span><span class="pill">Sauce</span><span class="pill">Pickles</span></p>
+</div>
+<div class="card">
+<div class="number">02 • Chick-fil-A</div>
+<h3>Chicken Sandwich</h3>
+<p>The ingredient list includes chicken, enriched flour, peanut oil, sugar, salt, MSG, soybean oil, a bun, pickles, and several food additives.</p>
+<p>Ingredients such as calcium propionate are used as preservatives, while dimethylpolysiloxane is used as an anti-foaming agent in the cooking oil.</p>
+<p><span class="pill">Chicken</span><span class="pill">Breading</span><span class="pill">Oil</span><span class="pill">Bun</span></p>
+</div>
+<div class="card">
+<div class="number">03 • Chick-fil-A</div>
+<h3>Waffle Potato Fries</h3>
+<p><strong>420 calories</strong>, 24 g total fat, 4 g saturated fat, and 240 mg sodium per listed serving.</p>
+<p>The ingredient list includes potatoes, canola oil, other vegetable oils, modified food starch, rice flour, salt, leavening agents, xanthan gum, dextrose, and dimethylpolysiloxane.</p>
+<p><span class="pill">Potatoes</span><span class="pill">Oil</span><span class="pill">Salt</span><span class="pill">Starches</span></p>
+</div>
+</div>
+</section>
+
+<section class="container" id="ingredients">
+<h2 class="section-title">3 Ingredients People May Not Recognize</h2>
+<p class="lead">These ingredients sound complicated, but a complicated name does not automatically mean an ingredient is dangerous. The important part is understanding what the ingredient does and how the overall food fits into a diet.</p>
+<div class="grid">
+<div class="card">
+<div class="number">01</div>
+<h3>Dimethylpolysiloxane</h3>
+<p><strong>What it does:</strong> Chick-fil-A lists it in the oil used for its chicken and waffle fries as an anti-foaming agent.</p>
+<p><strong>Why it is there:</strong> It helps control foam during cooking.</p>
+<p class="small">The FDA lists dimethylpolysiloxane among substances with authorized food uses.</p>
+</div>
+<div class="card">
+<div class="number">02</div>
+<h3>Calcium Propionate</h3>
+<p><strong>What it does:</strong> Chick-fil-A lists it as a preservative in its bun.</p>
+<p><strong>Why it is there:</strong> Calcium propionate is used as an antimicrobial agent to help prevent spoilage.</p>
+<p class="small">The FDA lists calcium propionate as a food ingredient with authorized uses.</p>
+</div>
+<div class="card">
+<div class="number">03</div>
+<h3>Sodium Benzoate</h3>
+<p><strong>What it does:</strong> Sodium benzoate is a preservative used in some foods and beverages.</p>
+<p><strong>Why it is there:</strong> It can help control microorganisms and maintain product quality.</p>
+<p class="small">Always check the specific product's ingredient list because ingredients differ between foods and restaurants.</p>
+</div>
+</div>
+<div class="callout"><strong>Important distinction:</strong> Food additives can have useful purposes. The FDA explains that ingredients may be added to maintain safety and freshness, improve texture, control color, or provide other technical functions. “Chemical-sounding” is not the same thing as “unsafe.”</div>
+</section>
+
+<section class="container" id="effects">
+<h2 class="section-title">What Can Become a Problem?</h2>
+<p class="lead">The main concern is usually the overall nutrition of the meal and how often foods high in certain nutrients are eaten, not one ingredient by itself.</p>
+<table>
+<tr><th>Nutrition factor</th><th>Why it matters</th><th>What to watch for</th></tr>
+<tr><td><strong>Sodium</strong></td><td>Too much sodium can raise blood pressure and increase the risk of heart disease and stroke.</td><td>The FDA Daily Value is less than 2,300 mg per day for people age 14 and older.</td></tr>
+<tr><td><strong>Added sugar</strong></td><td>High amounts can make it harder to stay within calorie needs while getting enough nutrients.</td><td>The FDA Daily Value for added sugar is 50 g per day on a 2,000-calorie diet.</td></tr>
+<tr><td><strong>Saturated fat</strong></td><td>Too much saturated fat can make it harder to follow a heart-healthy eating pattern.</td><td>Compare the saturated-fat amount on the Nutrition Facts label.</td></tr>
+<tr><td><strong>Low fiber / fewer whole foods</strong></td><td>A diet with more fruits, vegetables, whole grains, beans, and nuts can provide fiber and important nutrients.</td><td>Look at the whole meal, not just the burger or sandwich.</td></tr>
+</table>
+</section>
+
+<section class="container" id="alternatives">
+<h2 class="section-title">3 Healthier Alternatives</h2>
+<p class="lead">These are simple meals that can still feel filling and convenient while giving you more control over ingredients, portions, sodium, and added sugar.</p>
+<div class="grid">
+<div class="card meal"><div class="number">Meal 01</div><h3>Grilled Chicken Bowl</h3><p>Grilled chicken + brown rice + black beans + lettuce + tomatoes + avocado.</p><p><strong>Why it works:</strong> It combines protein, whole grains, vegetables, and fiber-rich beans.</p></div>
+<div class="card meal"><div class="number">Meal 02</div><h3>Turkey & Veggie Wrap</h3><p>Whole-grain tortilla + turkey + lettuce + tomato + cucumber + a light yogurt-based sauce.</p><p><strong>Why it works:</strong> You can control how much sauce and salt you add while including vegetables and whole grains.</p></div>
+<div class="card meal"><div class="number">Meal 03</div><h3>Homemade Burger Plate</h3><p>Lean beef or turkey burger + whole-grain bun + lettuce and tomato + oven-baked potato wedges + fruit.</p><p><strong>Why it works:</strong> Making it at home lets you choose the meat, amount of salt, toppings, cooking oil, and side.</p></div>
+</div>
+</section>
+
+<section class="container dark" id="takeaways">
+<h2 class="section-title">What Should We Take Away?</h2>
+<div class="grid">
+<div class="card"><h3>Read the label</h3><p>Nutrition Facts show amounts of calories, sodium, added sugar, saturated fat, and other nutrients.</p></div>
+<div class="card"><h3>Look beyond the name</h3><p>A food can sound simple while still containing many ingredients used for flavor, texture, preservation, or cooking.</p></div>
+<div class="card"><h3>Think about the whole meal</h3><p>A burger, fries, sauce, and sugary drink can add up quickly. Looking at the entire meal gives a more accurate picture.</p></div>
+<div class="card"><h3>Don't fear ingredients</h3><p>Unfamiliar names are not automatically harmful. Learn what they do and use reliable sources before making a judgment.</p></div>
+</div>
+</section>
+
+<section class="container" id="sources">
+<h2 class="section-title">Sources & Research</h2>
+<p class="lead">Primary sources were used when possible, including the CDC, FDA, McDonald's, and Chick-fil-A.</p>
+<div class="card">
+<p class="source"><strong>CDC / NCHS:</strong> Fast-food Intake Among Children and Adolescents in the United States, August 2021–August 2023. <a href="https://www.cdc.gov/nchs/data/hestat/hestat106.htm">View source</a></p>
+<p class="source"><strong>FDA:</strong> Types of Food Ingredients. <a href="https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients">View source</a></p>
+<p class="source"><strong>FDA:</strong> Food Additives and GRAS Ingredients — Information for Consumers. <a href="https://www.fda.gov/food/food-ingredients-packaging/food-additives-and-gras-ingredients-information-consumers">View source</a></p>
+<p class="source"><strong>FDA:</strong> Substances Added to Food — Dimethylpolysiloxane. <a href="https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=DIMETHYLPOLYSILOXANE&set=FoodSubstances">View source</a></p>
+<p class="source"><strong>FDA:</strong> Substances Added to Food — Calcium Propionate. <a href="https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CALCIUMPROPIONATE&set=FoodSubstances">View source</a></p>
+<p class="source"><strong>FDA:</strong> Substances Added to Food — Sodium Benzoate. <a href="https://www.hfpappexternal.fda.gov/Scripts/Fdcc/index.cfm?id=SODIUMBENZOATE&set=foodsubstances">View source</a></p>
+<p class="source"><strong>McDonald's:</strong> Big Mac product and ingredient information. <a href="https://www.mcdonalds.com/us/en-us/product/big-mac.html">View source</a></p>
+<p class="source"><strong>Chick-fil-A:</strong> Original Chicken Sandwich ingredient information. <a href="https://www.chick-fil-a.com/menu/entrees/chick-fil-a-chicken-sandwich">View source</a></p>
+<p class="source"><strong>Chick-fil-A:</strong> Waffle Potato Fries nutrition and ingredients. <a href="https://www.chick-fil-a.com/menu/sides/chick-fil-a-waffle-potato-fries">View source</a></p>
+</div>
+</section>
+
+<footer>
+<strong>What's Really in Fast Food?</strong>
+<p>Research project • Designed as a clean, student-friendly educational website.</p>
+<p class="small">Nutrition information can change and may vary by location or customization. This project is for education and is not medical advice.</p>
+</footer>
+</body>
+</html>
